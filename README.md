@@ -3,19 +3,20 @@
 
 - [Github repo](https://github.com/zulfidly/boilerplate-nuxt-vueuse-pinia-tailwind)
 
-### Install Nuxt
+### Install [Nuxt](https://nuxt.com/)
 ```
 npx nuxi@latest init n
 ```
 - ```cd n```
 - ```npm install```
 
-### Install VueUse
+### Install [VueUse](https://vueuse.org/)
 ```
 npm i -D @vueuse/nuxt @vueuse/core
 ```
 
-### Install Tailwind CSS 
+### Install [Tailwind CSS](https://tailwindcss.com/)
+- [@nuxtjs/tailwindcss](https://tailwindcss.nuxtjs.org/)
 ```
 npm install -D @nuxtjs/tailwindcss
 ```
@@ -29,7 +30,8 @@ npx tailwindcss init -p
 
 ### Install [Pinia](https://pinia.vuejs.org/ssr/nuxt.html)
 - add ```overrides``` to package.json
-```  "overrides": {
+```
+"overrides": {
     "vue": "latest"
   }
 ```
