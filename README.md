@@ -2,7 +2,9 @@
 ### final size is about 190 MB
 
 - [Github repo](https://github.com/zulfidly/boilerplate-nuxt-vueuse-pinia-tailwind)
-
+```
+git clone https://github.com/zulfidly/boilerplate-nuxt-vueuse-pinia-tailwind.git
+```
 ### Install [Nuxt](https://nuxt.com/)
 ```
 npx nuxi@latest init n
