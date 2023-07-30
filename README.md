@@ -4,26 +4,38 @@
 - [Github repo](https://github.com/zulfidly/boilerplate-nuxt-vueuse-pinia-tailwind)
 
 ### Install Nuxt
-- 
 ```
-npx nuxi@latest init <project-name>
+npx nuxi@latest init n
 ```
-- ```cd <project-name>```
+- ```cd n```
 - ```npm install```
 
 ### Install VueUse
-- ```npm i -D @vueuse/nuxt @vueuse/core```
+```
+npm i -D @vueuse/nuxt @vueuse/core
+```
 
 ### Install Tailwind CSS 
-- ```npm install -D @nuxtjs/tailwindcss```
-- ```npx tailwindcss init -p``` (bring tailwindcss.config.js into root folder)
+```
+npm install -D @nuxtjs/tailwindcss
+```
+- Bring tailwindcss.config.js into root folder, with codes below
+```
+npx tailwindcss init -p
+```
 - see ```/assets/style.css```
 - see ```@nuxtjs/tailwindcss``` inside ```nuxt.config.ts```
 - see ```tailwind.config.js```
 
 ### Install [Pinia](https://pinia.vuejs.org/ssr/nuxt.html)
-- add ```overrides``` added to package.json
-- ```npm install pinia @pinia/nuxt```
+- add ```overrides``` to package.json
+```  "overrides": {
+    "vue": "latest"
+  }
+```
+```
+npm install pinia @pinia/nuxt
+```
 - ```export const useMainStorePinia = defineStore('appStore', {})```, dir: ```./composables/appStore.js``` 
 - see ```@pinia/nuxt``` in nuxt.config.js
 - see ```./composables/appStore.js```
@@ -33,4 +45,9 @@ npx nuxi@latest init <project-name>
 ```
 npm run dev
 ```
+- to auto open browser :
+```
+npm run dev -- -o
+```
+
 
